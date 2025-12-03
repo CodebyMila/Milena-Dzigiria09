@@ -1,11 +1,8 @@
 @media (max-width: 768px) {
-
-
   .burger {
     display: block;
   }
 
- 
   nav ul {
     display: none;
     position: absolute;
@@ -16,15 +13,13 @@
     gap: 20px;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
-  
   #menu-toggle:checked ~ nav ul {
     display: flex;
   }
 
-  
   .bg-image {
     height: 400px;
   }
@@ -37,42 +32,19 @@
     font-size: 16px;
   }
 
-  
   ul {
     gap: 25px;
   }
 }
 
-
-@media (max-width: 480px) {
-
-  .bg-image {
-    height: 300px;
-  }
-
-  .bg-image h1 {
-    font-size: 32px;
-  }
-
-  .bg-image h4 {
-    font-size: 14px;
-  }
-
-
-  @media only screen and (max-width: 1322px) {
+@media (max-width: 1322px) {
   .right_side {
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
 
-@media only screen and (max-width: 974px) {
-  
-  
-  .left_side {
-    display: none;
-  }
+@media (max-width: 974px) {
+  .left_side,
   .left_side .card {
     display: none;
   }
@@ -82,24 +54,15 @@
   }
 
   .right_side {
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
   .flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .left_side {
@@ -113,16 +76,34 @@
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media (max-width: 480px) {
+  .bg-image {
+    height: 300px;
+  }
+
+  .bg-image h1 {
+    font-size: 32px;
+  }
+
+  .bg-image h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
   .left_side {
     min-width: 200px;
     max-width: 200px;
   }
+
   .right_side .card {
     width: 200px;
-    margin: 0 15px;
   }
 }
 
 
 
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
